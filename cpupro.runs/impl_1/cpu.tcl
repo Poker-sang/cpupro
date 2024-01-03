@@ -70,12 +70,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/Vivado/WorkSpace/final_up_changeOP/modify4.cache/wt [current_project]
-  set_property parent.project_path D:/Vivado/WorkSpace/final_up_changeOP/modify4.xpr [current_project]
-  set_property ip_output_repo D:/Vivado/WorkSpace/final_up_changeOP/modify4.cache/ip [current_project]
+  set_property webtalk.parent_dir F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.cache/wt [current_project]
+  set_property parent.project_path F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.xpr [current_project]
+  set_property ip_output_repo F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet D:/Vivado/WorkSpace/final_up_changeOP/modify4.runs/synth_1/cpu.dcp
-  read_xdc D:/Vivado/WorkSpace/final_up_changeOP/modify4.srcs/constrs_1/new/YUESHU1.xdc
+  add_files -quiet F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.runs/synth_1/cpu.dcp
+  read_xdc F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/constrs_1/new/myEgo1.xdc
   link_design -top cpu -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -155,15 +155,6 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set src_rc [catch { 
-    puts "source D:/Vivado/WorkSpace/modify4/name.tcl"
-    source D:/Vivado/WorkSpace/modify4/name.tcl
-  } _RESULT] 
-  if {$src_rc} { 
-    send_msg_id runtcl-1 error "$_RESULT"
-    send_msg_id runtcl-2 error "sourcing script D:/Vivado/WorkSpace/modify4/name.tcl failed"
-    return -code error
-  }
   catch { write_mem_info -force cpu.mmi }
   write_bitstream -force cpu.bit 
   catch {write_debug_probes -quiet -force cpu}

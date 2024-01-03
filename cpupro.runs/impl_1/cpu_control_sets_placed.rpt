@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Jan  4 20:54:08 2022
-| Host         : DESKTOP-JTN8P9I running 64-bit major release  (build 9200)
+| Date         : Wed Jan  3 16:48:28 2024
+| Host         : DESKTOP-T6TLGHR running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file cpu_control_sets_placed.rpt
 | Design       : cpu
 | Device       : xc7a35t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    21 |
-|    Minimum number of control sets                        |    21 |
+| Total control sets                                       |     1 |
+|    Minimum number of control sets                        |     1 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    35 |
+| Unused register locations in slices containing registers |     1 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    21 |
-| >= 0 to < 4        |     2 |
+| Total control sets |     1 |
+| >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     1 |
-| >= 10 to < 12      |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |    17 |
+| >= 16              |     0 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,42 +58,22 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             136 |           63 |
-| No           | No                    | Yes                    |              51 |           14 |
-| No           | Yes                   | No                     |             108 |           43 |
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               7 |            2 |
+| No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             350 |          139 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------+-----------------------------------+--------------------------------+------------------+----------------+
-|      Clock Signal      |           Enable Signal           |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
-+------------------------+-----------------------------------+--------------------------------+------------------+----------------+
-|  reg_latches_s1_1/E[0] |                                   | pcsource_s10                   |                1 |              2 |
-|  reg_latches_s2_1/E[0] |                                   |                                |                1 |              2 |
-|  clk_IBUF_BUFG         | if_pc1/npc_s1[8]_i_2_n_1          | reg_file1/p_0_in               |                3 |              9 |
-|  clk_IBUF_BUFG         |                                   | reg_latches_s3_1/clear0        |                3 |             11 |
-|  clk_IBUF_BUFG         | reg_latches_s3_1/p_0_in0_out[0]   |                                |                4 |             16 |
-|  clk_IBUF_BUFG         | reg_latches_s3_1/p_0_in0_out[3]   |                                |                4 |             16 |
-|  clk_IBUF_BUFG         | reg_latches_s3_1/p_0_in0_out[2]   |                                |                4 |             16 |
-|  clk_IBUF_BUFG         | reg_latches_s3_1/p_0_in0_out[1]   |                                |                4 |             16 |
-|  n_0_395_BUFG          |                                   |                                |               26 |             32 |
-|  clk_IBUF_BUFG         | reg_latches_s4_1/out_reg[65]_1[0] | reg_file1/p_0_in               |               18 |             32 |
-|  clk_IBUF_BUFG         | reg_latches_s4_1/out_reg[65]_2[0] | reg_file1/p_0_in               |                9 |             32 |
-|  clk_IBUF_BUFG         | reg_latches_s4_1/out_reg[65]_4[0] | reg_file1/p_0_in               |               14 |             32 |
-|  clk_IBUF_BUFG         | reg_latches_s4_1/out_reg[65]_3[0] | reg_file1/p_0_in               |                9 |             32 |
-|  clk_IBUF_BUFG         | reg_latches_s4_1/out_reg[65]_5[0] | reg_file1/p_0_in               |                9 |             32 |
-|  clk_IBUF_BUFG         | reg_latches_s4_1/out_reg[65]_6[0] | reg_file1/p_0_in               |               15 |             32 |
-|  clk_IBUF_BUFG         | reg_latches_s4_1/E[0]             | reg_file1/p_0_in               |               10 |             32 |
-|  mem_read_s4_BUFG      |                                   |                                |               15 |             32 |
-|  clk_IBUF_BUFG         |                                   | reg_file1/p_0_in               |               14 |             51 |
-|  clk_IBUF_BUFG         |                                   |                                |               21 |             70 |
-|  clk_IBUF_BUFG         |                                   | reg_latches_s3_1/out_reg[69]_0 |               39 |             95 |
-|  clk_IBUF_BUFG         | reg_latches_s1_1/out_reg[2]_0[0]  | reg_latches_s3_1/out_reg[69]_0 |               52 |            117 |
-+------------------------+-----------------------------------+--------------------------------+------------------+----------------+
++----------------+---------------+----------------------------+------------------+----------------+
+|  Clock Signal  | Enable Signal |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++----------------+---------------+----------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |               | PC1/period1_npc[7]_i_2_n_0 |                2 |              7 |
++----------------+---------------+----------------------------+------------------+----------------+
 
 

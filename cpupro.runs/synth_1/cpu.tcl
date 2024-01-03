@@ -17,28 +17,29 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/CPU/Pro/cpupro/cpupro.cache/wt [current_project]
-set_property parent.project_path E:/CPU/Pro/cpupro/cpupro.xpr [current_project]
+set_property webtalk.parent_dir F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.cache/wt [current_project]
+set_property parent.project_path F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo e:/CPU/Pro/cpupro/cpupro.cache/ip [current_project]
+set_property ip_output_repo f:/Grade3_1/cpu/cpu/project/cpupro/cpupro.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_mem E:/CPU/Pro/mypro_new/mypro_new.srcs/sources_1/new/im_data.mem
 read_verilog -library xil_defaultlib {
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/Control.v
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/Decode.v
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/EXE.v
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/IM.v
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/Memory.v
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/PC.v
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/Regfile.v
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/Register.v
-  E:/CPU/Pro/cpupro/cpupro.srcs/sources_1/new/cpu.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Memory.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/PC.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v
+  F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/cpu.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,8 +49,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/CPU/Pro/cpupro/cpupro.srcs/constrs_1/new/myEgo1.xdc
-set_property used_in_implementation false [get_files E:/CPU/Pro/cpupro/cpupro.srcs/constrs_1/new/myEgo1.xdc]
+read_xdc F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/constrs_1/new/myEgo1.xdc
+set_property used_in_implementation false [get_files F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/constrs_1/new/myEgo1.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

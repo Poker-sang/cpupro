@@ -46,7 +46,7 @@ module EXE(
             // sll
             6'd31: period3_exe_result <= period3_exe_data1 << period3_exe_data2[4:0];
             // srli
-            6'd32: period3_exe_result <= period3_exe_data1 >> period3_exe_data2;
+            6'd32: period3_exe_result <= period3_exe_data1 >> period3_exe_data2; 
             // srl
             6'd33: period3_exe_result <= period3_exe_data1 >> period3_exe_data2[4:0];
         endcase

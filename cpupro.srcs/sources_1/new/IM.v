@@ -21,7 +21,7 @@ module IM(
     
     // 读取16进制的数据
 	initial begin
-		$readmemh(IM_DATA_FILENAME, mem,0, MEM_NUM-1);
+		$readmemh(IM_DATA_FILENAME, mem,0, MEM_NUM-1); 
 	end
 	always @(*) begin
 	   if(period1_npc[8:2] > MEM_NUM) period1_command <= 32'b0;

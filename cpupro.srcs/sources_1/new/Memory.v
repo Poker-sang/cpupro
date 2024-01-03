@@ -3,12 +3,12 @@
 
 module Memory(
     input clk,
-    input [31:0] period4_exe_result,
-    input period4_memr,
-    input period4_memw,
-    input [31:0] period4_wdata,
-    input [1:0] period4_rw_bits,
-    output reg [31:0] period4_rdata
+    input [31:0] period4_exe_result, //执行阶段传来的结果
+    input period4_memr, //是否进行读
+    input period4_memw, //是否进行写
+    input [31:0] period4_wdata,  //写要的数据
+    input [1:0] period4_rw_bits,//读写方式确定
+    output reg [31:0] period4_rdata //读出的数据
 );
     parameter MEM_NUM = 0;
     // 32-bit memory with MEM_NUM entries

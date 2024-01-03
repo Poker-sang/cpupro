@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1673283334">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1704271661">
   <File Type="PA-TCL" Name="cpu.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="cpu_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="cpu_reports.tcl"/>
   <File Type="RDS-RDS" Name="cpu.vds"/>
   <File Type="RDS-UTIL" Name="cpu_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="cpu_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="cpu.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cpu_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="cpu_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Control.v">
@@ -68,12 +71,6 @@
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../mypro_new/mypro_new.srcs/sources_1/new/im_data.mem">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>

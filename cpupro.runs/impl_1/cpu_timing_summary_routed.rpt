@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Jan  4 20:54:41 2022
-| Host         : DESKTOP-JTN8P9I running 64-bit major release  (build 9200)
+| Date         : Wed Jan  3 16:48:43 2024
+| Host         : DESKTOP-T6TLGHR running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file cpu_timing_summary_routed.rpt -pb cpu_timing_summary_routed.pb -rpx cpu_timing_summary_routed.rpx -warn_on_violation
 | Design       : cpu
 | Device       : 7a35t-csg324
@@ -53,53 +53,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 641 register/latch pins with no clock driven by root clock pin: clk (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: cnt_clk_reg/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[13]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[16]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[17]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[21]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[22]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[23]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[26]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[27]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[28]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[29]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s1_1/out_reg[30]/Q (HIGH)
-
- There are 32 register/latch pins with no clock driven by root clock pin: reg_latches_s2_1/out_reg[10]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s2_1/out_reg[1]/Q (HIGH)
-
- There are 4 register/latch pins with no clock driven by root clock pin: reg_latches_s2_1/out_reg[2]/Q (HIGH)
-
- There are 32 register/latch pins with no clock driven by root clock pin: reg_latches_s2_1/out_reg[6]/Q (HIGH)
-
- There are 32 register/latch pins with no clock driven by root clock pin: reg_latches_s2_1/out_reg[7]/Q (HIGH)
-
- There are 32 register/latch pins with no clock driven by root clock pin: reg_latches_s2_1/out_reg[8]/Q (HIGH)
-
- There are 32 register/latch pins with no clock driven by root clock pin: reg_latches_s2_1/out_reg[9]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s2_2/out_reg[144]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s2_2/out_reg[145]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: reg_latches_s2_2/out_reg[146]/Q (HIGH)
-
- There are 32 register/latch pins with no clock driven by root clock pin: reg_latches_s3_1/out_reg[68]/Q (HIGH)
+ There are 7 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
 
 2. checking constant_clock
@@ -114,7 +68,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 2080 pins that are not constrained for maximum delay. (HIGH)
+ There are 14 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -128,7 +82,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 21 ports with no output delay specified. (HIGH)
+ There are 7 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
