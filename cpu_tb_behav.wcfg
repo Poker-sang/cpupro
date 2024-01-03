@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cpu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cpu_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="78700001fs"></ZoomEndTime>
+      <Cursor1Time time="32750000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="199"></NameColumnWidth>
+      <ValueColumnWidth column_width="95"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/cpu_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu1/forward_a" type="array">
+      <obj_property name="ElementShortName">forward_a[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forward_a[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu1/forward_b" type="array">
+      <obj_property name="ElementShortName">forward_b[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forward_b[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu1/reg_latches_1_1/clear" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+      <obj_property name="label">flush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu1/reg_latches_1_1/hold" type="logic">
+      <obj_property name="ElementShortName">hold</obj_property>
+      <obj_property name="ObjectShortName">hold</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu1/IM1/period1_command" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">period1_command[31:0]</obj_property>
+      <obj_property name="ObjectShortName">period1_command[31:0]</obj_property>
+      <obj_property name="label">instruction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu1/PC1/period1_pc" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">period1_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">period1_pc[31:0]</obj_property>
+      <obj_property name="label">pc</obj_property>
+   </wvobject>
+   <wvobject fp_name="group43" type="group">
+      <obj_property name="label">EXE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/cpu_tb/cpu1/EXE1/period3_exe_op" type="array">
+         <obj_property name="ElementShortName">period3_exe_op[5:0]</obj_property>
+         <obj_property name="ObjectShortName">period3_exe_op[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/EXE1/period3_exe_data1" type="array">
+         <obj_property name="ElementShortName">period3_exe_data1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period3_exe_data1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/EXE1/period3_exe_data2" type="array">
+         <obj_property name="ElementShortName">period3_exe_data2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period3_exe_data2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/EXE1/period3_exe_result" type="array">
+         <obj_property name="ElementShortName">period3_exe_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period3_exe_result[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu1/Regfile1/Reg" type="array">
+      <obj_property name="ElementShortName">Reg[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu1/Memory1/mem" type="array">
+      <obj_property name="ElementShortName">mem[0:127][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:127][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group22" type="group">
+      <obj_property name="label">Regfile</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/period5_wb" type="logic">
+         <obj_property name="ElementShortName">period5_wb</obj_property>
+         <obj_property name="ObjectShortName">period5_wb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/period2_rs" type="array">
+         <obj_property name="ElementShortName">period2_rs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/period2_rt" type="array">
+         <obj_property name="ElementShortName">period2_rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/period5_rd" type="array">
+         <obj_property name="ElementShortName">period5_rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period5_rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/wbdata" type="array">
+         <obj_property name="ElementShortName">wbdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wbdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/period2_rsdata" type="array">
+         <obj_property name="ElementShortName">period2_rsdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rsdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/period2_rtdata" type="array">
+         <obj_property name="ElementShortName">period2_rtdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rtdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/_data1" type="array">
+         <obj_property name="ElementShortName">_data1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">_data1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/_data2" type="array">
+         <obj_property name="ElementShortName">_data2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">_data2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Regfile1/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group48" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/cpu_tb/cpu1/Memory1/period4_exe_result" type="array">
+         <obj_property name="ElementShortName">period4_exe_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period4_exe_result[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Memory1/period4_memr" type="logic">
+         <obj_property name="ElementShortName">period4_memr</obj_property>
+         <obj_property name="ObjectShortName">period4_memr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Memory1/period4_memw" type="logic">
+         <obj_property name="ElementShortName">period4_memw</obj_property>
+         <obj_property name="ObjectShortName">period4_memw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Memory1/period4_wdata" type="array">
+         <obj_property name="ElementShortName">period4_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period4_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Memory1/period4_rw_bits" type="array">
+         <obj_property name="ElementShortName">period4_rw_bits[1:0]</obj_property>
+         <obj_property name="ObjectShortName">period4_rw_bits[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Memory1/period4_rdata" type="array">
+         <obj_property name="ElementShortName">period4_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period4_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Memory1/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Memory1/MEM_NUM" type="array">
+         <obj_property name="ElementShortName">MEM_NUM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_NUM[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">Decode</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/cpu_tb/cpu1/Decode1/period2_npc" type="array">
+         <obj_property name="ElementShortName">period2_npc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_npc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Decode1/period2_command" type="array">
+         <obj_property name="ElementShortName">period2_command[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_command[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Decode1/period2_opcode" type="array">
+         <obj_property name="ElementShortName">period2_opcode[5:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_opcode[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Decode1/period2_rs" type="array">
+         <obj_property name="ElementShortName">period2_rs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Decode1/period2_rt" type="array">
+         <obj_property name="ElementShortName">period2_rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Decode1/period2_rd" type="array">
+         <obj_property name="ElementShortName">period2_rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Decode1/period2_imm" type="array">
+         <obj_property name="ElementShortName">period2_imm[15:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_imm[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Decode1/period2_jaddr" type="array">
+         <obj_property name="ElementShortName">period2_jaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_jaddr[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group15" type="group">
+      <obj_property name="label">IM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/cpu_tb/cpu1/IM1/period1_npc" type="array">
+         <obj_property name="ElementShortName">period1_npc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">period1_npc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/IM1/mem" type="array">
+         <obj_property name="ElementShortName">mem[0:33][31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[0:33][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/IM1/MEM_NUM" type="array">
+         <obj_property name="ElementShortName">MEM_NUM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_NUM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/IM1/IM_DATA_FILENAME" type="array">
+         <obj_property name="ElementShortName">IM_DATA_FILENAME[87:0]</obj_property>
+         <obj_property name="ObjectShortName">IM_DATA_FILENAME[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group14" type="group">
+         <obj_property name="label">PC</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/cpu_tb/cpu1/PC1/period1_pcway" type="array">
+            <obj_property name="ElementShortName">period1_pcway[1:0]</obj_property>
+            <obj_property name="ObjectShortName">period1_pcway[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/cpu1/PC1/period1_baddr" type="array">
+            <obj_property name="ElementShortName">period1_baddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">period1_baddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/cpu1/PC1/period1_jaddr" type="array">
+            <obj_property name="ElementShortName">period1_jaddr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">period1_jaddr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/cpu1/PC1/period1_npc" type="array">
+            <obj_property name="ElementShortName">period1_npc[31:0]</obj_property>
+            <obj_property name="ObjectShortName">period1_npc[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group68" type="group">
+      <obj_property name="label">Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_opcode" type="array">
+         <obj_property name="ElementShortName">period2_opcode[5:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_opcode[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_imm" type="array">
+         <obj_property name="ElementShortName">period2_imm[15:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_imm[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_rd" type="array">
+         <obj_property name="ElementShortName">period2_rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_rs" type="array">
+         <obj_property name="ElementShortName">period2_rs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_rt" type="array">
+         <obj_property name="ElementShortName">period2_rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_if_imm" type="logic">
+         <obj_property name="ElementShortName">period2_if_imm</obj_property>
+         <obj_property name="ObjectShortName">period2_if_imm</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_if_branch" type="logic">
+         <obj_property name="ElementShortName">period2_if_branch</obj_property>
+         <obj_property name="ObjectShortName">period2_if_branch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_if_jump" type="logic">
+         <obj_property name="ElementShortName">period2_if_jump</obj_property>
+         <obj_property name="ObjectShortName">period2_if_jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_memr" type="logic">
+         <obj_property name="ElementShortName">period2_memr</obj_property>
+         <obj_property name="ObjectShortName">period2_memr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_memw" type="logic">
+         <obj_property name="ElementShortName">period2_memw</obj_property>
+         <obj_property name="ObjectShortName">period2_memw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_wb" type="logic">
+         <obj_property name="ElementShortName">period2_wb</obj_property>
+         <obj_property name="ObjectShortName">period2_wb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_rs_fact" type="array">
+         <obj_property name="ElementShortName">period2_rs_fact[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rs_fact[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/Control1/period2_rt_fact" type="array">
+         <obj_property name="ElementShortName">period2_rt_fact[4:0]</obj_property>
+         <obj_property name="ObjectShortName">period2_rt_fact[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group425" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/cpu_tb/cpu1/reg_latches_1_1/in" type="array">
+         <obj_property name="ElementShortName">in[63:0]</obj_property>
+         <obj_property name="ObjectShortName">in[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/reg_latches_1_1/out" type="array">
+         <obj_property name="ElementShortName">out[63:0]</obj_property>
+         <obj_property name="ObjectShortName">out[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/cpu1/reg_latches_1_1/N" type="array">
+         <obj_property name="ElementShortName">N[31:0]</obj_property>
+         <obj_property name="ObjectShortName">N[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
