@@ -10,7 +10,7 @@ module Memory(
     input [1:0] period4_rw_bits,//读写方式确定
     output reg [31:0] period4_rdata //读出的数据
 );
-    parameter MEM_NUM = 0;
+    parameter MEM_NUM = 127;
     // 32-bit memory with MEM_NUM entries
     // 实际的地址不能超过MEM_NUM * 4
     reg [31:0] mem [0:MEM_NUM];

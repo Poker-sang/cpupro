@@ -2,21 +2,40 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jan  3 19:14:36 2024
-# Process ID: 19312
-# Current directory: F:/Grade3_1/cpu/cpu/project/cpupro
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15232 F:\Grade3_1\cpu\cpu\project\cpupro\cpupro.xpr
-# Log file: F:/Grade3_1/cpu/cpu/project/cpupro/vivado.log
-# Journal file: F:/Grade3_1/cpu/cpu/project/cpupro\vivado.jou
+# Start of session at: Thu Jan  4 18:25:37 2024
+# Process ID: 31000
+# Current directory: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16856 F:\Grade3_1\cpu\cpu\project\cpuu\cpupro\cpupro.xpr
+# Log file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/vivado.log
+# Journal file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.xpr
+open_project F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.xpr
 update_compile_order -fileset sources_1
 launch_simulation
-open_wave_config F:/Grade3_1/cpu/cpu/project/cpupro/cpu_tb_behav.wcfg
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
 source cpu_tb.tcl
 close_sim
 launch_simulation
-open_wave_config F:/Grade3_1/cpu/cpu/project/cpupro/cpu_tb_behav.wcfg
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
 source cpu_tb.tcl
 close_sim

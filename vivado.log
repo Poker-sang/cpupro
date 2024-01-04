@@ -2,15 +2,15 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jan  3 19:14:36 2024
-# Process ID: 19312
-# Current directory: F:/Grade3_1/cpu/cpu/project/cpupro
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15232 F:\Grade3_1\cpu\cpu\project\cpupro\cpupro.xpr
-# Log file: F:/Grade3_1/cpu/cpu/project/cpupro/vivado.log
-# Journal file: F:/Grade3_1/cpu/cpu/project/cpupro\vivado.jou
+# Start of session at: Thu Jan  4 18:25:37 2024
+# Process ID: 31000
+# Current directory: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16856 F:\Grade3_1\cpu\cpu\project\cpuu\cpupro\cpupro.xpr
+# Log file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/vivado.log
+# Journal file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.xpr
+open_project F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -18,42 +18,43 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado19/Vivado/2019.1/data/ip'.
 update_compile_order -fileset sources_1
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim/im_data.mem'
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj cpu_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Control
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Decode.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Decode
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/EXE.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module EXE
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module IM
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_npc' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v:13]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_command' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v:14]
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_npc' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_command' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Memory.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/PC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Regfile
-WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v:20]
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v" into library xil_defaultlib
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Regfile.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Register
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'in' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v:13]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'out' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v:14]
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_in' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_out' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu_tb
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
 "xelab -wto 4c388f1835ff4c6dbaacd405575c5039 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
@@ -62,9 +63,9 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v" Line 4. Module Decode doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v" Line 4. Module Control doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v" Line 4. Module EXE doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Decode.v" Line 4. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Control.v" Line 4. Module Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/EXE.v" Line 4. Module EXE doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PC
@@ -77,101 +78,7 @@ Compiling module xil_defaultlib.Register(N=12)
 Compiling module xil_defaultlib.Register(N=159)
 Compiling module xil_defaultlib.EXE
 Compiling module xil_defaultlib.Register(N=146)
-Compiling module xil_defaultlib.Memory(MEM_NUM=127)
-Compiling module xil_defaultlib.Register(N=71)
-Compiling module xil_defaultlib.cpu
-Compiling module xil_defaultlib.cpu_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot cpu_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -view {F:/Grade3_1/cpu/cpu/project/cpupro/cpu_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-open_wave_config F:/Grade3_1/cpu/cpu/project/cpupro/cpu_tb_behav.wcfg
-WARNING: Simulation object /cpu_tb/cpu1/IM1/IM_DATA_FILENAME was not found in the design.
-source cpu_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1041.141 ; gain = 0.000
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1041.141 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1041.141 ; gain = 0.000
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj cpu_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Decode
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXE
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_npc' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v:13]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_command' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v:14]
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Regfile
-WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v:20]
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Register
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'in' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v:13]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'out' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v:14]
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/cpu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cpu
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cpu_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim'
-"xelab -wto 4c388f1835ff4c6dbaacd405575c5039 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: F:/vivado19/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c388f1835ff4c6dbaacd405575c5039 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v" Line 4. Module Decode doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v" Line 4. Module Control doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v" Line 4. Module EXE doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.IM(MEM_NUM=33)
-Compiling module xil_defaultlib.Register(N=64)
-Compiling module xil_defaultlib.Decode
-Compiling module xil_defaultlib.Control
-Compiling module xil_defaultlib.Regfile
-Compiling module xil_defaultlib.Register(N=12)
-Compiling module xil_defaultlib.Register(N=159)
-Compiling module xil_defaultlib.EXE
-Compiling module xil_defaultlib.Register(N=146)
-Compiling module xil_defaultlib.Memory(MEM_NUM=127)
+Compiling module xil_defaultlib.Memory
 Compiling module xil_defaultlib.Register(N=71)
 Compiling module xil_defaultlib.cpu
 Compiling module xil_defaultlib.cpu_tb
@@ -179,14 +86,13 @@ Compiling module xil_defaultlib.glbl
 Built simulation snapshot cpu_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -view {F:/Grade3_1/cpu/cpu/project/cpupro/cpu_tb_behav.wcfg} -log {simulate.log}"
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -view {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2019.1
 Time resolution is 1 ps
-open_wave_config F:/Grade3_1/cpu/cpu/project/cpupro/cpu_tb_behav.wcfg
-WARNING: Simulation object /cpu_tb/cpu1/IM1/IM_DATA_FILENAME was not found in the design.
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
 source cpu_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
@@ -198,11 +104,250 @@ source cpu_tb.tcl
 #   }
 # }
 # run 1000ns
-xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.141 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1032.066 ; gain = 65.629
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1041.141 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1032.066 ; gain = 65.629
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Jan  4 18:33:32 2024] Launched synth_1...
+Run output will be captured here: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/synth_1/runme.log
+[Thu Jan  4 18:33:32 2024] Launched impl_1...
+Run output will be captured here: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Netlist 29-17] Analyzing 223 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1808.848 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1808.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1808.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1941.504 ; gain = 659.500
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim/im_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/EXE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_npc' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_command' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Regfile.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_in' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_out' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
+"xelab -wto 4c388f1835ff4c6dbaacd405575c5039 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado19/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c388f1835ff4c6dbaacd405575c5039 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Decode.v" Line 4. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Control.v" Line 4. Module Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/EXE.v" Line 4. Module EXE doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM(MEM_NUM=33)
+Compiling module xil_defaultlib.Register(N=64)
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.Register(N=12)
+Compiling module xil_defaultlib.Register(N=159)
+Compiling module xil_defaultlib.EXE
+Compiling module xil_defaultlib.Register(N=146)
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.Register(N=71)
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -view {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3276.754 ; gain = 40.816
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3277.219 ; gain = 41.281
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim/im_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/EXE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_npc' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_command' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/IM.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Regfile.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_in' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_out' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
+"xelab -wto 4c388f1835ff4c6dbaacd405575c5039 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado19/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c388f1835ff4c6dbaacd405575c5039 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Decode.v" Line 4. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Control.v" Line 4. Module Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/EXE.v" Line 4. Module EXE doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM(MEM_NUM=33)
+Compiling module xil_defaultlib.Register(N=64)
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.Register(N=12)
+Compiling module xil_defaultlib.Register(N=159)
+Compiling module xil_defaultlib.EXE
+Compiling module xil_defaultlib.Register(N=146)
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.Register(N=71)
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -view {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3676.027 ; gain = 4.469
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 3676.027 ; gain = 4.469
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Jan  3 22:46:20 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  4 18:43:52 2024...

@@ -15,13 +15,13 @@ module IM(
     
     // number of instruction
     parameter MEM_NUM = 0;
-	//parameter IM_DATA_FILENAME = "";
+	parameter IM_DATA_FILENAME = "im_data.mem";
     // 32位的指令 32bits instructions
-	reg [31:0] mem [0:MEM_NUM];
+	reg [31:0] mem [0:33];
     
     // 读取16进制的数据
 	initial begin
-		//$readmemh(IM_DATA_FILENAME, mem,0, MEM_NUM-1); 
+		//$readmemh("im_data.mem", mem); 
         mem[0] = 32'h08400002;
         mem[1] = 32'h78420003;
         mem[2] = 32'h08200002;
@@ -41,7 +41,7 @@ module IM(
         mem[16] = 32'h05490000;
         mem[17] = 32'h0820000f;
         mem[18] = 32'h08a0000f;
-	end
+        end
 	always @(*) begin
 	   if(period1_npc[8:2] > MEM_NUM) period1_command <= 32'b0;
 	   // 加4 第n条  pc <= pc+4 means period1_npc[8:2] not period1_npc[8:0]

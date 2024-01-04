@@ -11,8 +11,8 @@
 module cpu(clk,reset,op,pc);
     input clk,reset;
     output [7:0] pc;
-    output [7:0] op;
-   
+    output [5:0] op;
+    reg previous_reset;
     // 第一阶段
     // 用于对pc的选择
     reg [1:0] period1_pcway;
@@ -83,18 +83,16 @@ module cpu(clk,reset,op,pc);
     // number of datamem
     parameter MEM_DATA_NUM = 127;
     // fileName of instructions restore 
-    //parameter IM_DATA_FILENAME = "im_data.mem";
+    //parameter IM_DATA_FILENAME = "";
     
-    assign pc=period1_npc;
-    assign op=period2_opcode;
+    assign pc=period1_npc[9:2];
+    assign op=period2_opcode[5:0];
 
     always @(negedge reset) begin
-        hold <= 1'b0;
-        flush <= 1'b0;
-        period1_pcway <= 2'b01;
         forward_a <= 1'b0;
         forward_b <= 1'b0;
     end
+
     // 第一阶段
     //例化pc
     PC PC1(
@@ -103,13 +101,14 @@ module cpu(clk,reset,op,pc);
         .period1_pc(period1_npc),.period1_npc(period1_npc)
     );
     // 例化指令读取
+//    IM #(.MEM_NUM(MEM_NUM),.IM_DATA_FILENAME(IM_DATA_FILENAME)) IM1(
     IM #(.MEM_NUM(MEM_NUM)) IM1(
         .clk(clk),.period1_npc(period1_npc),.period1_command(period1_command)
     );
     // 把第一阶段的指令转到第二阶段 （有条件转移）
     Register #(.N(32*2)) reg_latches_1_1(
         .clk(clk),.clear(flush),.hold(hold),
-        .in({period1_npc,period1_command}),.out({period2_npc,period2_command})
+        .data_in({period1_npc,period1_command}),.data_out({period2_npc,period2_command})
     );
 
     // 第二阶段
@@ -136,14 +135,14 @@ module cpu(clk,reset,op,pc);
    // 控制信号一定会传下去 或者停一次(lw sw连续时)
    Register #(.N(6+6)) Register_2_1(
         .clk(clk),.clear(hold | flush),.hold(1'b0),
-        .in({period2_opcode,period2_if_imm,period2_if_branch,period2_if_jump,period2_memr,period2_memw,period2_wb}),
-        .out({period3_opcode,period3_if_imm,period3_if_branch,period3_if_jump,period3_memr,period3_memw,period3_wb})
+        .data_in({period2_opcode,period2_if_imm,period2_if_branch,period2_if_jump,period2_memr,period2_memw,period2_wb}),
+        .data_out({period3_opcode,period3_if_imm,period3_if_branch,period3_if_jump,period3_memr,period3_memw,period3_wb})
     );
    // 数据不变 或者清除
    Register #(.N(5*3+16+32*2+32*2)) Register_2_2(
         .clk(clk),.clear(flush),.hold(hold),
-        .in({period2_rs_fact,period2_rt_fact,period2_rd,period2_imm,period2_jaddr,period2_baddr,period2_rsdata,period2_rtdata}),
-        .out({period3_rs_fact,period3_rt_fact,period3_rd,period3_imm,period3_jaddr,period3_baddr,period3_rsdata,period3_rtdata})
+        .data_in({period2_rs_fact,period2_rt_fact,period2_rd,period2_imm,period2_jaddr,period2_baddr,period2_rsdata,period2_rtdata}),
+        .data_out({period3_rs_fact,period3_rt_fact,period3_rd,period3_imm,period3_jaddr,period3_baddr,period3_rsdata,period3_rtdata})
     );
     
     // 第三阶段
@@ -188,11 +187,11 @@ module cpu(clk,reset,op,pc);
     // 传递
     Register #(.N(5+32*2+6 + 5 + 32+2+32)) Register_3_1(
         .clk(clk),.clear(flush),.hold(1'b0),
-        .in({   period3_rd,period3_jaddr,period3_baddr,period3_opcode,
+        .data_in({   period3_rd,period3_jaddr,period3_baddr,period3_opcode,
                 period3_if_branch,period3_if_jump,period3_memr,period3_memw,period3_wb,
                 period3_exe_result,period3_rw_bits,period3_exe_data1
          }),
-        .out({  period4_rd,period4_jaddr,period4_baddr,period4_opcode,
+        .data_out({  period4_rd,period4_jaddr,period4_baddr,period4_opcode,
                 period4_if_branch,period4_if_jump,period4_memr,period4_memw,period4_wb,
                 period4_exe_result,period4_rw_bits,period4_wdata
          })
@@ -208,6 +207,12 @@ module cpu(clk,reset,op,pc);
     // jump branch处理
     always @(*) begin
         // default
+        if(!reset&&reset != previous_reset)begin
+            flush <= 1'b0;
+            period1_pcway <= 2'b01;
+        end
+        previous_reset =reset; 
+        if(hold) period1_pcway <= 2'b00;
         period1_pcway <= 2'b01;
         flush <= 1'b0;
         period1_baddr <= period4_baddr;
@@ -231,8 +236,8 @@ module cpu(clk,reset,op,pc);
 	//传递
 	Register #(.N(5+2+32*2)) Register_4_1(
         .clk(clk),.clear(1'b0),.hold(1'b0),
-        .in({   period4_rd,period4_wb,period4_exe_result,period4_memr,period4_rdata }),
-        .out({  period5_rd,period5_wb,alu_out_s5,period5_memr,mem_read_data_s5 })
+        .data_in({   period4_rd,period4_wb,period4_exe_result,period4_memr,period4_rdata }),
+        .data_out({  period5_rd,period5_wb,alu_out_s5,period5_memr,mem_read_data_s5 })
     );
     
 	// 第五阶段
@@ -248,7 +253,7 @@ module cpu(clk,reset,op,pc);
 			forward_a <= 2'd2;
 		end else
 			forward_a <= 2'd0;
-		if ((period4_wb == 1'b1) & (period4_rd == period3_rt_fact)) begin
+		if ((period4_wb == 1'b1) && (period4_rd == period3_rt_fact)) begin
 			forward_b <= 2'd1;
 		end else if ((period5_wb == 1'b1) && (period5_rd == period3_rt_fact)) begin
 			forward_b <= 2'd2;
@@ -257,11 +262,14 @@ module cpu(clk,reset,op,pc);
 	end
     // 如果要读内存
     always @(*) begin
+        if(!reset&&reset != previous_reset)begin
+            hold <= 1'b0;
+        end
+        previous_reset =reset; 
 		if (period3_memr == 1'b1 && ((period2_rs_fact == period3_rd) || (period2_rt_fact == period3_rd)) ) begin
 			hold <= 1'b1;
 		end else
 			hold <= 1'b0;
-	   if(hold) period1_pcway <= 2'b00;
 	end
 endmodule
 

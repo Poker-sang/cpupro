@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jan  3 18:49:02 2024
-# Process ID: 19796
-# Current directory: F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.runs/impl_1
+# Start of session at: Thu Jan  4 18:34:08 2024
+# Process ID: 22304
+# Current directory: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1
 # Command line: vivado.exe -log cpu.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cpu.tcl -notrace
-# Log file: F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.runs/impl_1/cpu.vdi
-# Journal file: F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.runs/impl_1\vivado.jou
+# Log file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.vdi
+# Journal file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source cpu.tcl -notrace

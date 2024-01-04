@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.runs/synth_1'
+HD_PWD='F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

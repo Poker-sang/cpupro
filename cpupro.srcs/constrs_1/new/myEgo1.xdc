@@ -5,6 +5,7 @@ set_property PACKAGE_PIN P5 [get_ports clk]
 set_property PACKAGE_PIN P4 [get_ports reset]
 
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF]
+#set IM_DATA_FILENAME "F:\Grade3_1\cpu\cpu\project\cpupro\cpupro.ip_user_files\mem_init_files\im_data.mem"
 
 set_property PACKAGE_PIN F6 [get_ports {op[7]}]
 set_property PACKAGE_PIN G4 [get_ports {op[6]}]

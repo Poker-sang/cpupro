@@ -5,9 +5,9 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v" Line 4. Module Decode doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v" Line 4. Module Control doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v" Line 4. Module EXE doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Decode.v" Line 4. Module Decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Control.v" Line 4. Module Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/EXE.v" Line 4. Module EXE doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PC
@@ -20,7 +20,7 @@ Compiling module xil_defaultlib.Register(N=12)
 Compiling module xil_defaultlib.Register(N=159)
 Compiling module xil_defaultlib.EXE
 Compiling module xil_defaultlib.Register(N=146)
-Compiling module xil_defaultlib.Memory(MEM_NUM=127)
+Compiling module xil_defaultlib.Memory
 Compiling module xil_defaultlib.Register(N=71)
 Compiling module xil_defaultlib.cpu
 Compiling module xil_defaultlib.cpu_tb
