@@ -1,0 +1,15 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.sim/sim_1/behav/xsim/glbl.v,1544155482,verilog,,,,glbl,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v,1704277458,verilog,,,,cpu_tb,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v,1673265018,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v,,Control,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v,1673265018,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v,,Decode,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v,1704252902,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v,,EXE,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v,1704277594,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Memory.v,,IM,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Memory.v,1704276633,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/PC.v,,Memory,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/PC.v,1704204240,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v,,PC,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v,1704278070,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v,,Regfile,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v,1704279645,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/cpu.v,,Register,,,,,,,,
+F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/cpu.v,1704277693,verilog,,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v,F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/PC.v;F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v;F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v;F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v;F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v;F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v;F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Memory.v;F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v,cpu,,,,,,,,

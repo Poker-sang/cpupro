@@ -15,10 +15,16 @@ module Regfile(
     reg [31:0] Reg [0:31];
     reg [31:0] _data1, _data2;
     integer i = 0;
-    always @(negedge reset) begin
-    	for (i = 0; i < 32; i = i + 1) begin
-			Reg[i] <= 32'b0;
-		end
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            for (integer i = 0; i < 32; i = i + 1) begin
+                Reg[i] <= 32'b0;
+            end
+        end else begin
+            if (period5_wb && (period5_rd != 5'd0)) begin
+                Reg[period5_rd] <= wbdata;
+            end
+        end
     end
     always @(*) begin
 		if (period2_rs == 5'd0)
@@ -40,11 +46,11 @@ module Regfile(
     assign period2_rsdata = _data1;
 	assign period2_rtdata = _data2;
 	
-	always @(posedge clk) begin
-		if (period5_wb && period5_rd != 5'd0) begin
-			Reg[period5_rd] <= wbdata;
-		end
-	end
+//	always @(posedge clk) begin
+//		if (period5_wb && period5_rd != 5'd0) begin
+//			Reg[period5_rd] <= wbdata;
+//		end
+//	end
     
 endmodule
 

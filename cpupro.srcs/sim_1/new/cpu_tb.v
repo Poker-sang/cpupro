@@ -6,9 +6,6 @@
 
 module cpu_tb();
     integer i = 0;
-    parameter IM_MEM_NUM = 33;
-    parameter MEM_DATA_NUM = 127;
-    parameter IM_DATA_FILENAME = "im_data.mem";
 	reg	 clk;
 	reg	 reset;
 
@@ -31,8 +28,7 @@ module cpu_tb();
 //	   #5;
 //	end//
 	
-	cpu #(.MEM_NUM(IM_MEM_NUM),.MEM_DATA_NUM(MEM_DATA_NUM), .IM_DATA_FILENAME(IM_DATA_FILENAME))
-			cpu1(.clk(clk),.reset(reset));
+	cpu cpu1(.clk(clk),.reset(reset));
 parameter PERIOD = 10;
 
 always begin

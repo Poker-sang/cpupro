@@ -79,11 +79,11 @@ module cpu(clk,reset,op,pc);
     // 其他 用于4，5阶段修改reg数据 直接短链三阶段的寄存器
     reg [1:0] forward_a,forward_b;
       // number of instruction memory
-    parameter MEM_NUM = 0;
+    parameter MEM_NUM = 33;
     // number of datamem
-    parameter MEM_DATA_NUM = 0;
+    parameter MEM_DATA_NUM = 127;
     // fileName of instructions restore 
-    parameter IM_DATA_FILENAME = "";
+    //parameter IM_DATA_FILENAME = "im_data.mem";
     
     assign pc=period1_npc;
     assign op=period2_opcode;
@@ -103,7 +103,7 @@ module cpu(clk,reset,op,pc);
         .period1_pc(period1_npc),.period1_npc(period1_npc)
     );
     // 例化指令读取
-    IM #(.MEM_NUM(MEM_NUM),.IM_DATA_FILENAME(IM_DATA_FILENAME)) IM1(
+    IM #(.MEM_NUM(MEM_NUM)) IM1(
         .clk(clk),.period1_npc(period1_npc),.period1_command(period1_command)
     );
     // 把第一阶段的指令转到第二阶段 （有条件转移）

@@ -1,0 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/EXE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_npc' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'period1_command' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/IM.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Regfile.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'in' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'out' is not allowed [F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/Register.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
