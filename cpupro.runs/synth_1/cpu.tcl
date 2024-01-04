@@ -17,6 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -38,6 +41,7 @@ read_verilog -library xil_defaultlib {
   F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/PC.v
   F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Regfile.v
   F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v
+  F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v
   F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being

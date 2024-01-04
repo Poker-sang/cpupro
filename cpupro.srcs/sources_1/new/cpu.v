@@ -8,10 +8,12 @@
 `include "Memory.v"
 `include "Register.v"
 
-module cpu(clk,reset,op,pc);
+module cpu(clk,reset,op,pc,seg,an);
     input clk,reset;
     output [7:0] pc;
     output [5:0] op;
+    output [7:0] seg;
+    output [3:0] an;
     reg previous_reset;
     // 第一阶段
     // 用于对pc的选择
@@ -38,7 +40,7 @@ module cpu(clk,reset,op,pc);
     wire [4:0] period2_rs_fact,period2_rt_fact;
     // 寄存器获得的值
     wire [31:0] period2_rsdata,period2_rtdata;
-    
+
     // 第三阶段
     // 传递
     wire [5:0] period3_opcode;
@@ -76,6 +78,7 @@ module cpu(clk,reset,op,pc);
     wire [4:0] period5_rd;
     wire [31:0] period5_wbdata,alu_out_s5,mem_read_data_s5;
 
+
     // 其他 用于4，5阶段修改reg数据 直接短链三阶段的寄存器
     reg [1:0] forward_a,forward_b;
       // number of instruction memory
@@ -84,14 +87,18 @@ module cpu(clk,reset,op,pc);
     parameter MEM_DATA_NUM = 127;
     // fileName of instructions restore 
     //parameter IM_DATA_FILENAME = "";
-    
+    wire [3:0] ann ;
+//    wire [7:0] seg11;
+    wire [7:0] segg;
     assign pc=period1_npc[9:2];
     assign op=period2_opcode[5:0];
-
-    always @(negedge reset) begin
-        forward_a <= 1'b0;
-        forward_b <= 1'b0;
-    end
+//    assign seg1 = seg11;
+    assign an = ann;
+    assign seg = segg;
+//    always @(negedge reset) begin
+//        forward_a <= 1'b0;
+//        forward_b <= 1'b0;
+//    end
 
     // 第一阶段
     //例化pc
@@ -204,6 +211,13 @@ module cpu(clk,reset,op,pc);
         .period4_wdata(period4_wdata),.period4_rw_bits(period4_rw_bits),
         .period4_rdata(period4_rdata)
     );
+   led_top led1(
+	.clk(clk),.rst(rst),
+	.in3(period3_exe_result[15:12]),
+	.in2(period3_exe_result[11:8]),
+	.in1(period3_exe_result[7:4]),
+	.in0(period3_exe_result[3:0]),.seg(segg),.an(ann)
+	);
     // jump branch处理
     always @(*) begin
         // default
@@ -271,6 +285,7 @@ module cpu(clk,reset,op,pc);
 		end else
 			hold <= 1'b0;
 	end
+
 endmodule
 
 //`endif

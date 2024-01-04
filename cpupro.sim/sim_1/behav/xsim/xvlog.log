@@ -21,5 +21,8 @@ WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_in' is not allowed [F:/
 WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_out' is not allowed [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/Register.v:14]
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2458] undeclared symbol rst, assumed default net type wire [F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v:215]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_top
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu_tb

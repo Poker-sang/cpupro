@@ -2,12 +2,12 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jan  3 19:18:39 2024
-# Process ID: 15632
+# Start of session at: Thu Jan  4 20:07:55 2024
+# Process ID: 7588
 # Current directory: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim/xsim.dir/cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.sim/sim_1/behav/xsim/xsim.dir/cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Jan  3 19:18:44 2024...
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan  4 20:07:56 2024...

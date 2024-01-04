@@ -21,6 +21,7 @@ Compiling module xil_defaultlib.Register(N=159)
 Compiling module xil_defaultlib.EXE
 Compiling module xil_defaultlib.Register(N=146)
 Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.led_top
 Compiling module xil_defaultlib.Register(N=71)
 Compiling module xil_defaultlib.cpu
 Compiling module xil_defaultlib.cpu_tb

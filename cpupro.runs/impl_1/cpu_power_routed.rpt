@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu Jan  4 18:34:45 2024
+| Date             : Thu Jan  4 21:46:26 2024
 | Host             : DESKTOP-T6TLGHR running 64-bit major release  (build 9200)
 | Command          : report_power -file cpu_power_routed.rpt -pb cpu_power_summary_routed.pb -rpx cpu_power_routed.rpx
 | Design           : cpu
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 12.163       |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 11.995       |
-| Device Static (W)        | 0.168        |
-| Effective TJA (C/W)      | 4.8          |
-| Max Ambient (C)          | 26.9         |
-| Junction Temperature (C) | 83.1         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 25.779 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 25.293                           |
+| Device Static (W)        | 0.486                            |
+| Effective TJA (C/W)      | 4.8                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,18 +52,18 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |     2.005 |     2227 |       --- |             --- |
-|   LUT as Logic           |     1.862 |      999 |     20800 |            4.80 |
-|   CARRY4                 |     0.065 |       36 |      8150 |            0.44 |
-|   Register               |     0.043 |      843 |     41600 |            2.03 |
-|   BUFG                   |     0.021 |        3 |        32 |            9.38 |
-|   F7/F8 Muxes            |     0.011 |      187 |     32600 |            0.57 |
-|   LUT as Distributed RAM |     0.003 |       64 |      9600 |            0.67 |
-|   Others                 |     0.000 |       16 |       --- |             --- |
-| Signals                  |     2.530 |     1662 |       --- |             --- |
-| I/O                      |     7.460 |       16 |       210 |            7.62 |
-| Static Power             |     0.168 |          |           |                 |
-| Total                    |    12.163 |          |           |                 |
+| Slice Logic              |     3.165 |     2261 |       --- |             --- |
+|   LUT as Logic           |     2.890 |     1024 |     20800 |            4.92 |
+|   CARRY4                 |     0.104 |       36 |      8150 |            0.44 |
+|   Register               |     0.069 |      849 |     41600 |            2.04 |
+|   LUT as Distributed RAM |     0.059 |       64 |      9600 |            0.67 |
+|   F7/F8 Muxes            |     0.024 |      160 |     32600 |            0.49 |
+|   BUFG                   |     0.020 |        3 |        32 |            9.38 |
+|   Others                 |     0.000 |       17 |       --- |             --- |
+| Signals                  |     4.346 |     1728 |       --- |             --- |
+| I/O                      |    17.782 |       28 |       210 |           13.33 |
+| Static Power             |     0.486 |          |           |                 |
+| Total                    |    25.779 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,16 +73,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     4.627 |       4.539 |      0.088 |
-| Vccaux    |       1.800 |     0.295 |       0.273 |      0.022 |
-| Vcco33    |       3.300 |     2.111 |       2.110 |      0.001 |
+| Vccint    |       1.000 |     7.856 |       7.515 |      0.341 |
+| Vccaux    |       1.800 |     0.705 |       0.651 |      0.053 |
+| Vcco33    |       3.300 |     5.033 |       5.032 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| Vccbram   |       1.000 |     0.010 |       0.000 |      0.010 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -137,19 +137,52 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------------+-----------+
-| Name              | Power (W) |
-+-------------------+-----------+
-| cpu               |    11.995 |
-|   EXE1            |     0.015 |
-|   Memory1         |     0.012 |
-|   PC1             |     0.165 |
-|   Regfile1        |     0.299 |
-|   Register_2_1    |     0.878 |
-|   Register_2_2    |     1.207 |
-|   Register_3_1    |     0.308 |
-|   Register_4_1    |     0.384 |
-|   reg_latches_1_1 |     1.148 |
-+-------------------+-----------+
++-------------------------+-----------+
+| Name                    | Power (W) |
++-------------------------+-----------+
+| cpu                     |    25.293 |
+|   EXE1                  |     0.100 |
+|   Memory1               |     0.183 |
+|     mem_reg_0_127_0_0   |     0.002 |
+|     mem_reg_0_127_10_10 |     0.004 |
+|     mem_reg_0_127_11_11 |     0.005 |
+|     mem_reg_0_127_12_12 |     0.005 |
+|     mem_reg_0_127_13_13 |     0.003 |
+|     mem_reg_0_127_14_14 |     0.004 |
+|     mem_reg_0_127_15_15 |     0.004 |
+|     mem_reg_0_127_16_16 |     0.004 |
+|     mem_reg_0_127_17_17 |     0.004 |
+|     mem_reg_0_127_18_18 |     0.005 |
+|     mem_reg_0_127_19_19 |     0.005 |
+|     mem_reg_0_127_1_1   |     0.003 |
+|     mem_reg_0_127_20_20 |     0.004 |
+|     mem_reg_0_127_21_21 |     0.003 |
+|     mem_reg_0_127_22_22 |     0.002 |
+|     mem_reg_0_127_23_23 |     0.003 |
+|     mem_reg_0_127_24_24 |     0.004 |
+|     mem_reg_0_127_25_25 |     0.007 |
+|     mem_reg_0_127_26_26 |     0.003 |
+|     mem_reg_0_127_27_27 |     0.004 |
+|     mem_reg_0_127_28_28 |     0.003 |
+|     mem_reg_0_127_29_29 |     0.002 |
+|     mem_reg_0_127_2_2   |     0.002 |
+|     mem_reg_0_127_30_30 |     0.004 |
+|     mem_reg_0_127_31_31 |     0.002 |
+|     mem_reg_0_127_3_3   |     0.002 |
+|     mem_reg_0_127_4_4   |     0.002 |
+|     mem_reg_0_127_5_5   |     0.003 |
+|     mem_reg_0_127_6_6   |     0.003 |
+|     mem_reg_0_127_7_7   |     0.003 |
+|     mem_reg_0_127_8_8   |     0.002 |
+|     mem_reg_0_127_9_9   |     0.003 |
+|   PC1                   |     0.253 |
+|   Regfile1              |     0.293 |
+|   Register_2_1          |     0.826 |
+|   Register_2_2          |     2.959 |
+|   Register_3_1          |     0.863 |
+|   Register_4_1          |     1.048 |
+|   led1                  |     0.069 |
+|   reg_latches_1_1       |     0.821 |
++-------------------------+-----------+
 
 

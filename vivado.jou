@@ -2,10 +2,10 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Jan  4 18:25:37 2024
-# Process ID: 31000
+# Start of session at: Thu Jan  4 18:45:02 2024
+# Process ID: 18120
 # Current directory: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16856 F:\Grade3_1\cpu\cpu\project\cpuu\cpupro\cpupro.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25300 F:\Grade3_1\cpu\cpu\project\cpuu\cpupro\cpupro.xpr
 # Log file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/vivado.log
 # Journal file: F:/Grade3_1/cpu/cpu/project/cpuu/cpupro\vivado.jou
 #-----------------------------------------------------------
@@ -16,10 +16,97 @@ launch_simulation
 open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
 source cpu_tb.tcl
 close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
 open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_hw
+close [ open F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v w ]
+add_files F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+launch_simulation
+close_design
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+current_wave_config {cpu_tb_behav.wcfg}
+add_wave {{/cpu_tb/cpu1/a_to_g}} 
+save_wave_config {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg}
+save_wave_config {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
@@ -38,4 +125,206 @@ close_sim
 launch_simulation
 open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
 source cpu_tb.tcl
+current_wave_config {cpu_tb_behav.wcfg}
+add_wave {{/cpu_tb/cpu1/an}} 
+save_wave_config {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+current_wave_config {cpu_tb_behav.wcfg}
+add_wave {{/cpu_tb/cpu1/an}} 
+save_wave_config {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+launch_simulation
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+current_wave_config {cpu_tb_behav.wcfg}
+add_wave {{/cpu_tb/cpu1/seg1}} 
+current_wave_config {cpu_tb_behav.wcfg}
+add_wave {{/cpu_tb/cpu1/seg}} 
+current_wave_config {cpu_tb_behav.wcfg}
+add_wave {{/cpu_tb/cpu1/an}} 
+save_wave_config {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/impl_1/cpu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+add_bp {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v} 37
+remove_bps -file {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v} -line 37
+add_bp {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v} 37
+remove_bps -file {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v} -line 37
+add_bp {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v} 37
+remove_bps -file {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/cpu.v} -line 37
+add_bp {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v} 36
+remove_bps -file {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v} -line 36
+add_bp {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v} 34
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+step
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+remove_bps -file {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v} -line 34
+run all
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+add_bp {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/sources_1/new/led_top.v} 34
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+current_wave_config {cpu_tb_behav.wcfg}
+add_wave {{/cpu_tb/cpu1/led1/regN}} 
+save_wave_config {F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
 close_sim
