@@ -10,6 +10,7 @@ verilog xil_defaultlib  \
 "../../../../cpupro.srcs/sources_1/new/Register.v" \
 "../../../../cpupro.srcs/sources_1/new/cpu.v" \
 "../../../../cpupro.srcs/sources_1/new/led_top.v" \
+"../../../../cpupro.srcs/sources_1/new/seg.v" \
 "../../../../cpupro.srcs/sim_1/new/cpu_tb.v" \
 
 # compile glbl module

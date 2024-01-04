@@ -8,11 +8,11 @@
 `include "Memory.v"
 `include "Register.v"
 
-module cpu(clk,reset,op,pc,seg,an);
-    input clk,reset;
+module cpu(sys_clk,clk,reset,op,pc,seg,an);
+    input sys_clk,clk,reset;
     output [7:0] pc;
     output [5:0] op;
-    output [7:0] seg;
+    output [6:0] seg;
     output [3:0] an;
     reg previous_reset;
     // 第一阶段
@@ -89,7 +89,7 @@ module cpu(clk,reset,op,pc,seg,an);
     //parameter IM_DATA_FILENAME = "";
     wire [3:0] ann ;
 //    wire [7:0] seg11;
-    wire [7:0] segg;
+    wire [6:0] segg;
     assign pc=period1_npc[9:2];
     assign op=period2_opcode[5:0];
 //    assign seg1 = seg11;
@@ -211,12 +211,9 @@ module cpu(clk,reset,op,pc,seg,an);
         .period4_wdata(period4_wdata),.period4_rw_bits(period4_rw_bits),
         .period4_rdata(period4_rdata)
     );
-   led_top led1(
-	.clk(clk),.rst(rst),
-	.in3(period3_exe_result[15:12]),
-	.in2(period3_exe_result[11:8]),
-	.in1(period3_exe_result[7:4]),
-	.in0(period3_exe_result[3:0]),.seg(segg),.an(ann)
+   display led1(
+	.clk(sys_clk),.reset(reset),
+	.s(period3_exe_result),.seg(segg),.ans(ann)
 	);
     // jump branch处理
     always @(*) begin

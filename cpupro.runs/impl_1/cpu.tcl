@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -71,12 +70,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.cache/wt [current_project]
-  set_property parent.project_path F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.xpr [current_project]
-  set_property ip_output_repo F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/WorkSpace/cpupro/cpupro.cache/wt [current_project]
+  set_property parent.project_path C:/WorkSpace/cpupro/cpupro.xpr [current_project]
+  set_property ip_output_repo C:/WorkSpace/cpupro/cpupro.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.runs/synth_1/cpu.dcp
-  read_xdc F:/Grade3_1/cpu/cpu/project/cpuu/cpupro/cpupro.srcs/constrs_1/new/myEgo1.xdc
+  add_files -quiet C:/WorkSpace/cpupro/cpupro.runs/synth_1/cpu.dcp
+  read_xdc C:/WorkSpace/cpupro/cpupro.srcs/constrs_1/new/myEgo1.xdc
   link_design -top cpu -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

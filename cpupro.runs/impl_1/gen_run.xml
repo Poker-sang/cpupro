@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1704375912">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1704384696">
   <File Type="BITSTR-BMM" Name="cpu_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="cpu_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="cpu_timing_summary_init.rpt"/>
@@ -128,6 +128,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/led_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seg.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
