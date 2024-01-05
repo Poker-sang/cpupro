@@ -1,6 +1,6 @@
 set_property SRC_FILE_INFO {cfile:C:/WorkSpace/cpupro/cpupro.srcs/constrs_1/new/myEgo1.xdc rfile:../../../cpupro.srcs/constrs_1/new/myEgo1.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN P17 IOSTANDARD LVCMOS33} [get_ports sys_clk ]
+set_property -dict {PACKAGE_PIN P17 IOSTANDARD LVCMOS33} [get_ports sys_clk]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN P5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

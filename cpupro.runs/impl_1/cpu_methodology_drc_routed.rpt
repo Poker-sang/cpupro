@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Jan  5 00:12:57 2024
+| Date         : Fri Jan  5 08:25:50 2024
 | Host         : LAPTOP-62OVULU1 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file cpu_methodology_drc_routed.rpt -pb cpu_methodology_drc_routed.pb -rpx cpu_methodology_drc_routed.rpx
 | Design       : cpu
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 940
+             Violations found: 943
 +-----------+------------------+------------------------------+------------+
 | Rule      | Severity         | Description                  | Violations |
 +-----------+------------------+------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell  | 873        |
 | LUTAR-1   | Warning          | LUT drives async reset alert | 1          |
+| SYNTH-10  | Warning          | Wide multiplier              | 3          |
 | TIMING-20 | Warning          | Non-clocked latch            | 66         |
 +-----------+------------------+------------------------------+------------+
 
@@ -4402,6 +4403,21 @@ Related violations: <none>
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell reg_latches_1_1/data_out[0]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) PC1/period1_npc_reg[1]/CLR, PC1/period1_npc_reg[2]/CLR, PC1/period1_npc_reg[3]/CLR, PC1/period1_npc_reg[4]/CLR, PC1/period1_npc_reg[5]/CLR, PC1/period1_npc_reg[6]/CLR, PC1/period1_npc_reg[7]/CLR, PC1/period1_npc_reg[8]/CLR, PC1/period1_npc_reg[9]/CLR, led1/count_reg[0]/CLR, led1/count_reg[10]/CLR, led1/count_reg[11]/CLR, led1/count_reg[12]/CLR, led1/count_reg[13]/CLR, led1/count_reg[14]/CLR (the first 15 of 27 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at EXE1/period3_exe_result1 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at EXE1/period3_exe_result1__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at EXE1/period3_exe_result1__1 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 TIMING-20#1 Warning

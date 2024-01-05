@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Jan  5 00:12:39 2024
+| Date         : Fri Jan  5 08:25:23 2024
 | Host         : LAPTOP-62OVULU1 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file cpu_control_sets_placed.rpt
 | Design       : cpu
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             144 |           61 |
+| No           | No                    | No                     |             144 |           65 |
 | No           | No                    | Yes                    |              27 |           10 |
-| No           | Yes                   | No                     |             105 |           45 |
+| No           | Yes                   | No                     |             105 |           43 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |             480 |          215 |
-| Yes          | Yes                   | No                     |             119 |           38 |
+| Yes          | No                    | Yes                    |             480 |          229 |
+| Yes          | Yes                   | No                     |             119 |           42 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,34 +74,34 @@ Table of Contents
 |    Clock Signal    |            Enable Signal            |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
 +--------------------+-------------------------------------+-----------------------------------+------------------+----------------+
 |  Register_2_1/E[0] |                                     |                                   |                1 |              2 |
-|  sys_clk_IBUF_BUFG |                                     |                                   |                2 |              8 |
+|  sys_clk_IBUF_BUFG |                                     |                                   |                3 |              8 |
 |  clk_IBUF_BUFG     |                                     | led1/reset                        |                5 |              9 |
-|  clk_IBUF_BUFG     |                                     | reg_latches_1_1/data_out_reg[2]_0 |                3 |             11 |
+|  clk_IBUF_BUFG     |                                     | reg_latches_1_1/data_out_reg[2]_0 |                5 |             11 |
+|  clk_IBUF_BUFG     | Register_3_1/p_0_in0_out[0]         |                                   |                4 |             16 |
+|  clk_IBUF_BUFG     | Register_3_1/p_0_in0_out[3]         |                                   |                4 |             16 |
 |  clk_IBUF_BUFG     | Register_3_1/p_0_in0_out[2]         |                                   |                4 |             16 |
 |  clk_IBUF_BUFG     | Register_3_1/p_0_in0_out[1]         |                                   |                4 |             16 |
-|  clk_IBUF_BUFG     | Register_3_1/p_0_in0_out[3]         |                                   |                4 |             16 |
-|  clk_IBUF_BUFG     | Register_3_1/p_0_in0_out[0]         |                                   |                4 |             16 |
 |  sys_clk_IBUF_BUFG |                                     | led1/reset                        |                5 |             18 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_10[0] | reset_IBUF                        |               16 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_13[0] | reset_IBUF                        |               13 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_8[0]  | reset_IBUF                        |               18 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_1[0]  | reset_IBUF                        |               16 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_0[0]  | reset_IBUF                        |               14 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_11[0] | reset_IBUF                        |               17 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_12[0] | reset_IBUF                        |               13 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_2[0]  | reset_IBUF                        |                9 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_3[0]  | reset_IBUF                        |               10 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_5[0]  | reset_IBUF                        |               16 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_6[0]  | reset_IBUF                        |               15 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_7[0]  | reset_IBUF                        |               17 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_4[0]  | reset_IBUF                        |               12 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/E[0]                   | reset_IBUF                        |               19 |             32 |
-|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_9[0]  | reset_IBUF                        |               10 |             32 |
-|  n_0_624_BUFG      |                                     |                                   |               21 |             32 |
-|  period4_memr_BUFG |                                     |                                   |               17 |             32 |
-|  clk_IBUF_BUFG     |                                     |                                   |               20 |             70 |
-|  clk_IBUF_BUFG     |                                     | Register_3_1/data_out_reg[69]_0   |               42 |             94 |
-|  clk_IBUF_BUFG     | reg_latches_1_1/E[0]                | Register_3_1/data_out_reg[69]_0   |               38 |            119 |
+|  period4_memr_BUFG |                                     |                                   |               16 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/E[0]                   | reset_IBUF                        |               18 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_5[0]  | reset_IBUF                        |               20 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_11[0] | reset_IBUF                        |                9 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_8[0]  | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_0[0]  | reset_IBUF                        |               18 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_4[0]  | reset_IBUF                        |               13 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_1[0]  | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_7[0]  | reset_IBUF                        |               16 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_2[0]  | reset_IBUF                        |               10 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_3[0]  | reset_IBUF                        |               15 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_6[0]  | reset_IBUF                        |               16 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_13[0] | reset_IBUF                        |               12 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_10[0] | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_9[0]  | reset_IBUF                        |               14 |             32 |
+|  clk_IBUF_BUFG     | Register_4_1/data_out_reg[65]_12[0] | reset_IBUF                        |               17 |             32 |
+|  n_0_598_BUFG      |                                     |                                   |               21 |             32 |
+|  clk_IBUF_BUFG     |                                     |                                   |               24 |             70 |
+|  clk_IBUF_BUFG     |                                     | Register_3_1/data_out_reg[69]_0   |               38 |             94 |
+|  clk_IBUF_BUFG     | reg_latches_1_1/E[0]                | Register_3_1/data_out_reg[69]_0   |               42 |            119 |
 +--------------------+-------------------------------------+-----------------------------------+------------------+----------------+
 
 

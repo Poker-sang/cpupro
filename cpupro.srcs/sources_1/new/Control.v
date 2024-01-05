@@ -30,7 +30,7 @@ module Control(
         
         case(period2_opcode)
             // 使用3个寄存器的
-            // 'add', 'sub', 'and', 'or', 'nor', 'xor', 'sll', 'srl', 'sra', 'slt'
+            // 'add', 'sub', 'and', 'or', 'nor', 'xor', 'sll', 'srl', 'mul', 'div'
             6'd1,6'd4,6'd5,6'd7,6'd9,6'd11,6'd31,6'd33,6'd35,6'd36: begin
                  period2_wb <= 1'b1;
             end
