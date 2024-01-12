@@ -2,13 +2,17 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jan 12 19:24:05 2024
-# Process ID: 22756
+# Start of session at: Wed Jan 10 11:02:00 2024
+# Process ID: 11912
 # Current directory: F:/Grade3_1/cpu/project/cpuu/cpupro
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14180 F:\Grade3_1\cpu\project\cpuu\cpupro\cpupro.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16884 F:\Grade3_1\cpu\project\cpuu\cpupro\cpupro.xpr
 # Log file: F:/Grade3_1/cpu/project/cpuu/cpupro/vivado.log
 # Journal file: F:/Grade3_1/cpu/project/cpuu/cpupro\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project F:/Grade3_1/cpu/project/cpuu/cpupro/cpupro.xpr
 update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config F:/Grade3_1/cpu/project/cpuu/cpupro/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
