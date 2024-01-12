@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="111937820fs"></ZoomEndTime>
-      <Cursor1Time time="90000000fs"></Cursor1Time>
+      <ZoomEndTime time="120223721fs"></ZoomEndTime>
+      <Cursor1Time time="56374000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="199"></NameColumnWidth>
-      <ValueColumnWidth column_width="67"></ValueColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="24" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/cpu_tb/i" type="array">
       <obj_property name="ElementShortName">i[31:0]</obj_property>
       <obj_property name="ObjectShortName">i[31:0]</obj_property>
@@ -327,15 +327,11 @@
       <obj_property name="ObjectShortName">an[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/cpu_tb/cpu1/seg" type="array">
-      <obj_property name="ElementShortName">seg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">seg[7:0]</obj_property>
+      <obj_property name="ElementShortName">seg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg[6:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/cpu_tb/cpu1/an" type="array">
       <obj_property name="ElementShortName">an[3:0]</obj_property>
       <obj_property name="ObjectShortName">an[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cpu_tb/cpu1/led1/regN" type="array">
-      <obj_property name="ElementShortName">regN[17:0]</obj_property>
-      <obj_property name="ObjectShortName">regN[17:0]</obj_property>
    </wvobject>
 </wave_config>

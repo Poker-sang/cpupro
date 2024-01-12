@@ -46,8 +46,10 @@ initial begin
     clk = 1'b1;
     reset = 1'b0;
     #5;
+    reset = 1'b1;
+    #2;
     reset = 1'b0;
-    #5;
+    #3
     reset = 1'b1;
     end
 endmodule

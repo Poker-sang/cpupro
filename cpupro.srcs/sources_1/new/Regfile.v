@@ -16,7 +16,7 @@ module Regfile(
     reg [31:0] _data1, _data2;
     integer i = 0;
     always @(posedge clk or posedge reset) begin
-        if (reset) begin
+        if (!reset) begin
             for (integer i = 0; i < 32; i = i + 1) begin
                 Reg[i] <= 32'b0;
             end
